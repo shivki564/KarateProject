@@ -1,0 +1,31 @@
+<testsuite failures="1" name="FeatureFiles/karate09.feature" skipped="0" tests="1" time="2.14997">
+  <testcase classname="FeatureFiles.karate09" name="REST API End to END testing" time="2.14997">
+    <failure message="karate09.feature:20 - no step-definition method match found for: {&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;32&quot;}">Given url "http://dummy.restapiexample.com/api/v1/create" ................. passed
+And request {"name":"Shiv ki ","salary":"5.9L","age":"23"} ................ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* def id = response.data.id ............................................... passed
+* match response.data.name == "Shiv ki" ................................... passed
+And print id .............................................................. passed
+Given url "http://dummy.restapiexample.com/api/v1/employee/" + id ......... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+Given url "http://dummy.restapiexample.com/api/v1/update/" + id ........... passed
+And {"name":"Shiv ki ","salary":"5.9L","age":"32"} ........................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate09.feature:20 - no step-definition method match found for: {"name":"Shiv ki ","salary":"5.9L","age":"32"}&#13;
+	at ✽.And {"name":"Shiv ki ","salary":"5.9L","age":"32"} (karate09.feature:20)&#13;
+
+When method put ........................................................... skipped
+Then status 200 ........................................................... skipped
+Given url "http://dummy.restapiexample.com/api/v1/delete/" + id ........... skipped
+And {"name":"Shiv ki ","salary":"5.9L","age":"32"} ........................ skipped
+When method delete ........................................................ skipped
+Then status 200 ........................................................... skipped
+Given url "http://dummy.restapiexample.com/api/v1/employee/" + id ......... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

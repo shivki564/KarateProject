@@ -1,0 +1,26 @@
+<testsuite failures="0" name="FeatureFiles/karate13.feature" skipped="0" tests="3" time="0.035768">
+  <testcase classname="FeatureFiles.karate13" name="static variable retrival test" time="0.019324">
+    <system-out>* def constants = Java.type('Misc.automationConstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Non static variable retrival test" time="0.009727">
+    <system-out>* def constants = Java.type('Misc.automationConstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Non static variable retrival test2" time="0.006717">
+    <system-out>* def constants = Java.type('Misc.automationConstants') ................... passed
+* print constants.devUrl .................................................. passed
+* print constants.getDevUrl() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

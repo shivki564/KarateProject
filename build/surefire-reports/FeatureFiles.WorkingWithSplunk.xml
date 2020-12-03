@@ -1,0 +1,63 @@
+<testsuite failures="2" name="FeatureFiles/WorkingWithSplunk.feature" skipped="0" tests="2" time="42.17229">
+  <testcase classname="FeatureFiles.WorkingWithSplunk" name="Job Search 1" time="21.098468">
+    <failure message="WorkingWithSplunk.feature:24 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect">* def login = ............................................................. passed
+* def auth = login("admin", "Admin123") ................................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.90:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:24 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect&#13;
+	at ✽.When method get (WorkingWithSplunk.feature:24)&#13;
+
+Then status 200 ........................................................... skipped
+* print responseType ...................................................... skipped
+* def title = get response //feed/title ................................... skipped
+* print title ............................................................. skipped
+* match title == "jobs" ................................................... skipped</failure>
+  </testcase>
+  <testcase classname="FeatureFiles.WorkingWithSplunk" name="Alert Search 1" time="21.073822">
+    <failure message="WorkingWithSplunk.feature:35 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect">* def login = ............................................................. passed
+* def auth = login("admin", "Admin123") ................................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.90:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/search/jobs" ........................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:24 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect&#13;
+	at ✽.When method get (WorkingWithSplunk.feature:24)&#13;
+
+Then status 200 ........................................................... skipped
+* print responseType ...................................................... skipped
+* def title = get response //feed/title ................................... skipped
+* print title ............................................................. skipped
+* match title == "jobs" ................................................... skipped
+* def login = ............................................................. passed
+* def auth = login("admin", "Admin123") ................................... passed
+* print auth .............................................................. passed
+* configure ssl = true .................................................... passed
+Given url "https://192.168.1.90:8089" ..................................... passed
+And header Authorization = auth ........................................... passed
+Given path "/services/alerts/alert_actions" ............................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect&#13;
+	at ✽.When method get (WorkingWithSplunk.feature:35)&#13;
+
+Then status 200 ........................................................... skipped
+* print responseType ...................................................... skipped
+* def title = get response //feed/title ................................... skipped
+* print title ............................................................. skipped
+* match title == "alert_actions" .......................................... skipped</failure>
+  </testcase>
+</testsuite>

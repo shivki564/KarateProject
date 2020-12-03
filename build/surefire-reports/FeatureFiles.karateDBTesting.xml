@@ -1,0 +1,13 @@
+<testsuite failures="1" name="FeatureFiles/karateDBTesting.feature" skipped="0" tests="1" time="0.004884">
+  <testcase classname="FeatureFiles.karateDBTesting" name="Select scenario" time="0.004884">
+    <failure message="-unknown-:4 - evaluation (js) failed: Java.type('Misc.MyDbUtil'), java.lang.RuntimeException: java.lang.ClassNotFoundException: Misc.MyDbUtil&#10;stack trace: jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)">* def db = Java.type('Misc.MyDbUtil') ..................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:4 - evaluation (js) failed: Java.type('Misc.MyDbUtil'), java.lang.RuntimeException: java.lang.ClassNotFoundException: Misc.MyDbUtil
+stack trace: jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)&#13;
+	at ✽.* def db = Java.type('Misc.MyDbUtil') (-unknown-:4)&#13;
+
+* def rows = db.selectStatement("select * from tools"); ................... skipped
+* print rows .............................................................. skipped</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,19 @@
+<testsuite failures="1" name="FeatureFiles/karate07.feature" skipped="0" tests="1" time="0.301938">
+  <testcase classname="FeatureFiles.karate07" name="SOAP API testing" time="0.301938">
+    <failure message="karate07.feature:13 - path: , actual: '&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '122', reason: not a sub-string">Given url "https://www.w3schools.com/xml/tempconvert.asmx" ................ passed
+And header Content-Type = "text/xml; charset=utf-8" ....................... passed
+And request read('../PayloadData/soapAPIInput.xml') ....................... passed
+When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit" ...... passed
+Then status 200 ........................................................... passed
+And match response contains "122" ......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate07.feature:13 - path: , actual: '&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '122', reason: not a sub-string&#13;
+	at ✽.And match response contains "122" (karate07.feature:13)&#13;
+
+* match response //CelsiusToFahrenheitResponse/CelsiusToFahrenheitResult == "122" . skipped
+* match responseHeaders['Server'] == ['Microsoft-IIS/7.5'] ................ skipped
+* match responseHeaders['Server'][0] == 'Microsoft-IIS/7.5' ............... skipped
+* assert responseTime &lt;= 2000 ............................................. skipped</failure>
+  </testcase>
+</testsuite>

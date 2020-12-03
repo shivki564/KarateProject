@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karate01.feature" skipped="0" tests="1" time="0.066263">
+  <testcase classname="src.test.java.FeatureFiles.karate01" name="Karate_test_03" time="0.066263">
+    <system-out>* def a = 10 .............................................................. passed
+* def b = 25 .............................................................. passed
+* def c = a * b ........................................................... passed
+* assert c == 250 ......................................................... passed
+* print "C = ",  c ........................................................ passed
+* karate.log("Test case 3 ended") ......................................... passed</system-out>
+  </testcase>
+</testsuite>

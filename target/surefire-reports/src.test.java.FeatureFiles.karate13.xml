@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karate13.feature" skipped="0" tests="1" time="0.033086">
+  <testcase classname="src.test.java.FeatureFiles.karate13" name="Non static variable retrival test2" time="0.033086">
+    <system-out>* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

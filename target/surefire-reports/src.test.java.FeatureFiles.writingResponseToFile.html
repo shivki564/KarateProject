@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.FeatureFiles.writingResponseToFile</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-03 03:17:03 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:3]">[1:3] Example1 </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/FeatureFiles/writingResponseToFile.feature</span><span class="feature-description">Test suite 14 | Writing response to file</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:3]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Example1 </span>
+</div>
+<div class="scenario-time passed">ms: 2453</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">* def lib = Java.type('Misc.MyUtil')</div>
+</div>
+<div class="time-cell passed">25</div>
+</div>
+<div class="preformatted" data-parent="1">15:17:01.286 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given url "https://reqres.in/api/users/10"</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1144</div>
+</div>
+<div class="preformatted" data-parent="3">15:17:01.989 request:
+1 &gt; GET https://reqres.in/api/users/10
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+15:17:02.395 response time in milliseconds: 395.01
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1444
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 5fbc6a2cbe2e3c0c-BLR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Dec 2020 09:55:54 GMT
+1 &lt; Etag: W/"11a-HZArdo/NdQVkMJD6hJ+FKDocHPs"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RvZ%2FGU5VG5FN3P0q7roAEKaEqYWZOqHfCUf%2FfQNwg7H5FIM%2Fin4OGmECobdCs2I3yMaCbREuKV9IydhNoUcxOA2%2FiLS8m0neOpI%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d90a5879d5952260a1dedcf0ec8e1fc161606989354; expires=Sat, 02-Jan-21 09:55:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 06c9a0aff300003c0cd20b6000000001
+{"data":{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">* def res2 = get response $.data</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#* lib.writeToFile("res.json", response)</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">* lib.writeToFile("res2.json", res2)</div>
+</div>
+<div class="time-cell passed">20</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* def res2 = read("classpath:res2.json")</div>
+</div>
+<div class="time-cell passed">10</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* print res1</div>
+</div>
+<div class="time-cell passed">12</div>
+</div>
+<div class="preformatted" data-parent="8">15:17:02.535 [print]</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* print res2</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="9">15:17:02.551 [print] {
+  "last_name": "Fields",
+  "id": 10,
+  "avatar": "https://reqres.in/img/faces/10-image.jpg",
+  "first_name": "Byron",
+  "email": "byron.fields@reqres.in"
+}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">* def id =  response.data.id</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Given url "https://www.w3schools.com/xml/tempconvert.asmx"</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And header Content-Type = "text/xml; charset=utf-8"</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#And request read('soapAPIInput.xml')</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And request read('../PayloadData/soapAPIInput.xml')</div>
+</div>
+<div class="time-cell passed">498</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit"</div>
+</div>
+<div class="time-cell passed">378</div>
+</div>
+<div class="preformatted" data-parent="14">15:17:03.145 request:
+2 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 359
+2 &gt; Content-Type: text/xml; charset=UTF-8
+2 &gt; Cookie: __cfduid=d90a5879d5952260a1dedcf0ec8e1fc161606989354
+2 &gt; Host: www.w3schools.com
+2 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+    &lt;soap:Body&gt;&#13;
+        &lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;&#13;
+            &lt;Celsius&gt;10&lt;/Celsius&gt;&#13;
+        &lt;/CelsiusToFahrenheit&gt;&#13;
+    &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:17:03.442 response time in milliseconds: 297.72
+2 &lt; 200
+2 &lt; Cache-Control: private, max-age=0,public
+2 &lt; Content-Type: text/xml; charset=utf-8
+2 &lt; Date: Thu, 03 Dec 2020 09:53:57 GMT
+2 &lt; Server: Microsoft-IIS/7.5
+2 &lt; Vary: Accept-Encoding
+2 &lt; X-AspNet-Version: 4.0.30319
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Powered-By: ASP.NET
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;50&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And request read('soapAPIInput.xml')</div>
+</div>
+<div class="time-cell passed">21</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">When soap action "https://www.w3schools.com/xml/CelsiusToFahrenheit"</div>
+</div>
+<div class="time-cell passed">293</div>
+</div>
+<div class="preformatted" data-parent="17">15:17:03.473 request:
+3 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Length: 359
+3 &gt; Content-Type: text/xml; charset=UTF-8
+3 &gt; Cookie: __cfduid=d90a5879d5952260a1dedcf0ec8e1fc161606989354
+3 &gt; Host: www.w3schools.com
+3 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#13;
+    &lt;soap:Body&gt;&#13;
+        &lt;CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/"&gt;&#13;
+            &lt;Celsius&gt;10&lt;/Celsius&gt;&#13;
+        &lt;/CelsiusToFahrenheit&gt;&#13;
+    &lt;/soap:Body&gt;&#13;
+&lt;/soap:Envelope&gt;
+
+15:17:03.754 response time in milliseconds: 284.73
+3 &lt; 200
+3 &lt; Cache-Control: private, max-age=0,public
+3 &lt; Content-Type: text/xml; charset=utf-8
+3 &lt; Date: Thu, 03 Dec 2020 09:53:57 GMT
+3 &lt; Server: Microsoft-IIS/7.5
+3 &lt; Vary: Accept-Encoding
+3 &lt; X-AspNet-Version: 4.0.30319
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Powered-By: ASP.NET
+&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"&gt;&lt;CelsiusToFahrenheitResult&gt;50&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

@@ -1,0 +1,2670 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>GradleWorkspace</td>
+            <td>03 Dec 2020, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+          <p>The following summary displays scenarios that failed.</p>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+              <div class="elements">
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karate03-feature_4.html">FeatureFiles/karate03.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">080ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">XML_test case 02</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def xml =</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>&lt;info&gt;
+    &lt;id&gt;101&lt;/id&gt;
+    &lt;tool&gt;
+        &lt;name&gt;Karate&lt;/name&gt;
+        &lt;version&gt;0.9.6&lt;/version&gt;
+    &lt;/tool&gt;
+     &lt;tool&gt;
+        &lt;name&gt;IntelliJ&lt;/name&gt;
+        &lt;version&gt;2020.2&lt;/version&gt;
+    &lt;/tool&gt;
+&lt;/info&gt;
+19:00:25.117 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print xml</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>19:00:25.132 [print] &lt;info&gt;
+  &lt;id&gt;101&lt;/id&gt;
+  &lt;tool&gt;
+    &lt;name&gt;Karate&lt;/name&gt;
+    &lt;version&gt;0.9.6&lt;/version&gt;
+  &lt;/tool&gt;
+  &lt;tool&gt;
+    &lt;name&gt;IntelliJ&lt;/name&gt;
+    &lt;version&gt;2020.2&lt;/version&gt;
+  &lt;/tool&gt;
+&lt;/info&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match xml/info/id == &quot;101&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match xml.info.id == &quot;101&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match xml/info/tool[2] contains &quot;&lt;name&gt;IntelliJ&lt;/name&gt;&lt;version&gt;2020.2&lt;/version&gt;&quot;</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match xml contains &quot;version&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">match xml/info/tool contains  &quot;&lt;name&gt;IntelliJ&lt;/name&gt;&lt;version&gt;2020.2&lt;/version&gt;&quot;</span>
+  
+  <span class="lead-duration duration">056ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>com.intuit.karate.exception.KarateException: karate03.feature:34 - tried to access field com.sun.org.apache.xerces.internal.dom.ParentNode.firstChild from class com.sun.org.apache.xerces.internal.dom.DocumentImplAccAccess</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: karate03.feature:34 - tried to access field com.sun.org.apache.xerces.internal.dom.ParentNode.firstChild from class com.sun.org.apache.xerces.internal.dom.DocumentImplAccAccess</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:00:25.210 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karate07-feature_7.html">FeatureFiles/karate07.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_soap.html">@soap</a>
+      </div>
+
+  
+  <span class="lead-duration duration">301ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">SOAP API testing</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://www.w3schools.com/xml/tempconvert.asmx&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>19:00:26.023 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = &quot;text/xml; charset=utf-8&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request read('../PayloadData/soapAPIInput.xml')</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">soap action &quot;https://www.w3schools.com/xml/CelsiusToFahrenheit&quot;</span>
+  
+  <span class="lead-duration duration">277ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>19:00:26.054 request:
+1 &gt; POST https://www.w3schools.com/xml/tempconvert.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 362
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.w3schools.com
+1 &gt; SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;soap:Body&gt;
+        &lt;CelsiusToFahrenheit xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;
+            &lt;Celsius&gt;#(id)&lt;/Celsius&gt;
+        &lt;/CelsiusToFahrenheit&gt;
+    &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+19:00:26.320 response time in milliseconds: 270.41
+1 &lt; 200
+1 &lt; Cache-Control: private, max-age=0,public
+1 &lt; Content-Type: text/xml; charset=utf-8
+1 &lt; Date: Thu, 03 Dec 2020 13:37:19 GMT
+1 &lt; Server: Microsoft-IIS/7.5
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-AspNet-Version: 4.0.30319
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: ASP.NET
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains &quot;122&quot;</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>com.intuit.karate.exception.KarateException: karate07.feature:13 - path: , actual: '&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '122', reason: not a sub-string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: karate07.feature:13 - path: , actual: '&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '122', reason: not a sub-string</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>19:00:26.335 assertion failed: path: , actual: '&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;soap:Body&gt;&lt;CelsiusToFahrenheitResponse xmlns=&quot;https://www.w3schools.com/xml/&quot;&gt;&lt;CelsiusToFahrenheitResult&gt;Error&lt;/CelsiusToFahrenheitResult&gt;&lt;/CelsiusToFahrenheitResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;', expected: '122', reason: not a sub-string</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match response //CelsiusToFahrenheitResponse/CelsiusToFahrenheitResult == &quot;122&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseHeaders['Server'] == ['Microsoft-IIS/7.5']</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match responseHeaders['Server'][0] == 'Microsoft-IIS/7.5'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">assert responseTime &lt;= 2000</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>19:00:26.335 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karate09-feature_9.html">FeatureFiles/karate09.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 149ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">REST API End to END testing</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">Create,Fetch,update,delete employee test</div>
+
+  <div id="element-14" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://dummy.restapiexample.com/api/v1/create&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>19:00:26.539 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;23&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1s 074ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>19:00:26.539 request:
+1 &gt; POST http://dummy.restapiexample.com/api/v1/create
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 46
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;23&quot;}
+
+19:00:27.617 response time in milliseconds: 1071.91
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private, max-age=31536000
+1 &lt; Content-Length: 131
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 03 Dec 2020 13:39:20 GMT
+1 &lt; Display: staticcontent_sol
+1 &lt; Expires: Fri, 03 Dec 2021 13:39:20 GMT
+1 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 &lt; Referrer-Policy: 
+1 &lt; Response: 200
+1 &lt; Server: nginx/1.16.0
+1 &lt; Vary: [Accept-Encoding, Accept-Encoding,Origin]
+1 &lt; X-Ezoic-Cdn: Miss
+1 &lt; X-Middleton-Display: staticcontent_sol
+1 &lt; X-Middleton-Response: 200
+1 &lt; X-Ratelimit-Limit: 60
+1 &lt; X-Ratelimit-Remaining: 58
+1 &lt; X-Sol: pub_site
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;name&quot;:&quot;Shiv ki&quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;23&quot;,&quot;id&quot;:232},&quot;message&quot;:&quot;Successfully! Record has been added.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def id = response.data.id</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.data.name == &quot;Shiv ki&quot;</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>19:00:27.648 [print] 232</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://dummy.restapiexample.com/api/v1/employee/&quot; + id</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 038ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>19:00:27.663 request:
+2 &gt; GET http://dummy.restapiexample.com/api/v1/employee/232
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: dummy.restapiexample.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:00:28.695 response time in milliseconds: 1034.90
+2 &lt; 200
+2 &lt; Cache-Control: no-cache, private, max-age=31536000
+2 &lt; Content-Length: 83
+2 &lt; Content-Type: application/json
+2 &lt; Date: Thu, 03 Dec 2020 13:39:21 GMT
+2 &lt; Display: staticcontent_sol
+2 &lt; Expires: Fri, 03 Dec 2021 13:39:21 GMT
+2 &lt; Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2 &lt; Referrer-Policy: 
+2 &lt; Response: 200
+2 &lt; Server: nginx/1.16.0
+2 &lt; Vary: [Accept-Encoding, Accept-Encoding,User-Agent,Origin]
+2 &lt; X-Ezoic-Cdn: Miss
+2 &lt; X-Middleton-Display: staticcontent_sol
+2 &lt; X-Middleton-Response: 200
+2 &lt; X-Ratelimit-Limit: 60
+2 &lt; X-Ratelimit-Remaining: 58
+2 &lt; X-Sol: pub_site
+{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:null,&quot;message&quot;:&quot;Successfully! Record has been fetched.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>19:00:28.695 [print] {
+  &quot;data&quot;: null,
+  &quot;message&quot;: &quot;Successfully! Record has been fetched.&quot;,
+  &quot;status&quot;: &quot;success&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://dummy.restapiexample.com/api/v1/update/&quot; + id</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">{&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;32&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>com.intuit.karate.exception.KarateException: karate09.feature:20 - no step-definition method match found for: {&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;32&quot;}</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: karate09.feature:20 - no step-definition method match found for: {&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;32&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://dummy.restapiexample.com/api/v1/delete/&quot; + id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">{&quot;name&quot;:&quot;Shiv ki &quot;,&quot;salary&quot;:&quot;5.9L&quot;,&quot;age&quot;:&quot;32&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;http://dummy.restapiexample.com/api/v1/employee/&quot; + id</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>19:00:28.710 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karate10-feature_10.html">FeatureFiles/karate10.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">042ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">URL &amp; path Usage test case</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url &quot;https://reqres.in&quot;</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>19:00:28.757 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;/api/users?page=2&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>19:00:28.773 request:
+1 &gt; GET https://reqres.in/api/users%3Fpage=2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:00:28.804 response time in milliseconds: 23.35
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1099
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 5fbdb17d38d43c13-BLR
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 03 Dec 2020 13:39:21 GMT
+1 &lt; Etag: W/&quot;2c1-N6Rqerxquq2kgQhL51EiSg4x0R8&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=c6MbUZdFlHeTwMKMoGgKY7rTYoRn7%2B7QIvWqwtsSxuSz0NPE4n1PgJlWbZwfUPKXXmPK%2BXqCvZ0jICjgkZUAh5OLipmZcSYKRLY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d8ff6c5a4027469d138e0157e3761877d1607002761; expires=Sat, 02-Jan-21 13:39:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 06ca6d424600003c1339bd4000000001
+{&quot;page&quot;:1,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;cerulean&quot;,&quot;year&quot;:2000,&quot;color&quot;:&quot;#98B2D1&quot;,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;year&quot;:2001,&quot;color&quot;:&quot;#C74375&quot;,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;true red&quot;,&quot;year&quot;:2002,&quot;color&quot;:&quot;#BF1932&quot;,&quot;pantone_value&quot;:&quot;19-1664&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;aqua sky&quot;,&quot;year&quot;:2003,&quot;color&quot;:&quot;#7BC4C4&quot;,&quot;pantone_value&quot;:&quot;14-4811&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;tigerlily&quot;,&quot;year&quot;:2004,&quot;color&quot;:&quot;#E2583E&quot;,&quot;pantone_value&quot;:&quot;17-1456&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;blue turquoise&quot;,&quot;year&quot;:2005,&quot;color&quot;:&quot;#53B0AE&quot;,&quot;pantone_value&quot;:&quot;15-5217&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.page == 2</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
+          <a>com.intuit.karate.exception.KarateException: karate10.feature:9 - path: $.page, actual: 1, expected: 2, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: karate10.feature:9 - path: $.page, actual: 1, expected: 2, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>19:00:28.804 assertion failed: path: $.page, actual: 1, expected: 2, reason: not equal (Integer)19:00:28.804 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karateDBTesting-feature_14.html">FeatureFiles/karateDBTesting.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">004ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+    
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = Java.type('Misc.MyDbUtil')</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>com.intuit.karate.exception.KarateException: -unknown-:4 - evaluation (js) failed: Java.type('Misc.MyDbUtil'), java.lang.RuntimeException: java.lang.ClassNotFoundException: Misc.MyDbUtil</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: -unknown-:4 - evaluation (js) failed: Java.type('Misc.MyDbUtil'), java.lang.RuntimeException: java.lang.ClassNotFoundException: Misc.MyDbUtil
+stack trace: jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>19:00:29.257 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-karateDBTesting-feature_14.html">FeatureFiles/karateDBTesting.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Select scenario</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-34">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def rows = db.selectStatement(&quot;select * from tools&quot;);</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print rows</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>19:00:29.257 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-Sample-feature_17.html">FeatureFiles/Sample.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
+    
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">precondition1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
+          <a>com.intuit.karate.exception.KarateException: -unknown-:5 - no step-definition method match found for: precondition1</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: -unknown-:5 - no step-definition method match found for: precondition1</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>19:00:29.367 from karate config file</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Precondition2</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-Sample-feature_17.html">FeatureFiles/Sample.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_tagName.html">@tagName</a>
+           <a href="report-tag_tagname2.html">@tagname2</a>
+      </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-40">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Testcase1</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">Test comment</div>
+
+  <div id="element-40" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-41">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">preconditionstep1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">preCOndition step 2</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Action step 1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Action  step 2</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Action step 3</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Validation step 1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validation step 2</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>19:00:29.367 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-WorkingWithSplunk-feature_19.html">FeatureFiles/WorkingWithSplunk.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">21s 068ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Job Search 1</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-44">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;/services/search/jobs&quot;</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">21s 066ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-45">
+          <a>com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:24 - </a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:24 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>19:00:29.460 request:
+1 &gt; GET https://192.168.1.90:8089/services/search/jobs
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46QWRtaW4xMjM=
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 192.168.1.90:8089
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:00:50.527 org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect, http call failed after 21067 milliseconds for URL: https://192.168.1.90:8089/services/search/jobs
+19:00:50.527 http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print responseType</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def title = get response //feed/title</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print title</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match title == &quot;jobs&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>19:00:50.527 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeatureFiles-WorkingWithSplunk-feature_19.html">FeatureFiles/WorkingWithSplunk.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">21s 071ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-48">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Alert Search 1</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-49">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-49" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path &quot;/services/alerts/alert_actions&quot;</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">21s 066ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-50">
+          <a>com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:35 - </a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: WorkingWithSplunk.feature:35 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>19:00:50.542 request:
+1 &gt; GET https://192.168.1.90:8089/services/alerts/alert_actions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic YWRtaW46QWRtaW4xMjM=
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 192.168.1.90:8089
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+19:01:11.605 org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect, http call failed after 21063 milliseconds for URL: https://192.168.1.90:8089/services/alerts/alert_actions
+19:01:11.605 http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.90:8089 [/192.168.1.90] failed: Connection timed out: connect</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print responseType</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def title = get response //feed/title</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print title</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match title == &quot;alert_actions&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>19:01:11.605 after scenario inside config</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

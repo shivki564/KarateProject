@@ -1,0 +1,31 @@
+<testsuite failures="1" name="FeatureFiles/karate10.feature" skipped="0" tests="2" time="0.078569">
+  <testcase classname="FeatureFiles.karate10" name="URL &amp; path Usage test case" time="0.04265">
+    <failure message="karate10.feature:9 - path: $.page, actual: 1, expected: 2, reason: not equal (Integer)">Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 2 .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate10.feature:9 - path: $.page, actual: 1, expected: 2, reason: not equal (Integer)&#13;
+	at ✽.And match response.page == 2 (karate10.feature:9)</failure>
+  </testcase>
+  <testcase classname="FeatureFiles.karate10" name="URL &amp; path Usage test case2" time="0.03592">
+    <system-out>Given url "https://reqres.in" ............................................. passed
+And path "/api/users?page=2" .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 2 .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate10.feature:9 - path: $.page, actual: 1, expected: 2, reason: not equal (Integer)&#13;
+	at ✽.And match response.page == 2 (karate10.feature:9)&#13;
+
+Given url "https://reqres.in" ............................................. passed
+And path "/api/users" ..................................................... passed
+And param page = 2 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 2 .............................................. passed</system-out>
+  </testcase>
+</testsuite>

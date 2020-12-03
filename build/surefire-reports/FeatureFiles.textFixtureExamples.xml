@@ -1,0 +1,18 @@
+<testsuite failures="0" name="FeatureFiles/textFixtureExamples.feature" skipped="0" tests="2" time="0.012208">
+  <testcase classname="FeatureFiles.textFixtureExamples" name="Test case 1" time="0.009329">
+    <system-out>* print "before scenario" ................................................. passed
+* configure afterScenario = ............................................... passed
+* configure afterFeature = ................................................ passed
+* print "from Test case 1" ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.textFixtureExamples" name="Test case 2" time="0.002879">
+    <system-out>* print "before scenario" ................................................. passed
+* configure afterScenario = ............................................... passed
+* configure afterFeature = ................................................ passed
+* print "from Test case 1" ................................................ passed
+* print "before scenario" ................................................. passed
+* configure afterScenario = ............................................... passed
+* configure afterFeature = ................................................ passed
+* print "from test case 2" ................................................ passed</system-out>
+  </testcase>
+</testsuite>
